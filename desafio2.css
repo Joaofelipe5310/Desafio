@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap");
+
+:root {
+  --body-bg-color: #faf7fd;
+  --purple: #8a5eb6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  background-color: white;
+}
+
+body,
+html {
+  font-family: "poppins", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .tree-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.tree-container .avatar {
+  margin-top: 20px;
+  width: 213px;
+  height: 213px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--purple);
+  border-radius: 50%;
+}
+
+.tree-container .avatar img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 0px 0.1px;
+}
+
+.tree-container .insta-user {
+  margin-top: 15px;
+  color: black;
+}
+
+.socials-container {
+  margin: 25px;
+  border: none;
+  transform: scale(0.9);
+  transition: ease 0.3s;
+}
+
+.social {
+  margin: 0px 15px;
+  border: none;
+}
+
+.link {
+  margin: 15px;
+  border: 1px solid var(--purple);
+  padding: 10px 200px;
+  font-weight: 600;
+  text-transform: capitalize;
+  transition: ease 0.3s;
+  max-width: 326px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.link {
+  color: var(--purple);
+}
+
+.link:hover {
+  background: var(--purple);
+  color: white;
+}
+
+.social:hover {
+  display: inline-block;
+  transform: scale(1.2);
+}
